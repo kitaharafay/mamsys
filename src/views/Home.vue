@@ -1,9 +1,17 @@
 <template>
   <el-container style="min-height:100vh;">
-    <el-header class="elx-header">Navheader</el-header>
+    <el-header class="elx-header">
+      <div style="float:right;">
+        <el-button icon="el-icon-user" class="elx-header-btn">user</el-button>
+      </div>     
+    </el-header>
     <el-container>
-      <el-aside width="256px" >
+      <el-aside width="256px">
         <el-menu style="height:calc(100vh - 80px);">
+          <el-menu-item index="10">
+            <i class="el-icon-s-home"></i>
+            <span slot="title">首页</span>
+          </el-menu-item>
           <el-submenu index="8">
             <template slot="title">
               <i class="el-icon-setting"></i>
@@ -121,8 +129,15 @@
 
 <style scoped>
 .elx-header {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   z-index: 999;
+  line-height: 60px;
+}
+
+.elx-header-btn {
+  border: none;
+  height: 60px;
+  vertical-align: top;
 }
 </style>
 

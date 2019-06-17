@@ -3,7 +3,7 @@
         <slot></slot>
     </el-container>
 </template>
-
+s'd
 <script>
 export default {
     name: 'Page'
