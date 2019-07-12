@@ -2,7 +2,7 @@
   <el-container class="gh-main-warpper">
     <el-header>Header</el-header>
     <el-container>
-      <el-aside>Aside</el-aside>
+      <gh-sidebar></gh-sidebar>
       <el-container>
         <el-main style="overflow:hidden">Main</el-main>
         <el-footer>Footer</el-footer>
@@ -12,7 +12,12 @@
 </template>
 
 <script>
-export default {}
+import LeftSideBar from './components/SideBar.vue'
+export default {
+  components: {
+    'gh-sidebar': LeftSideBar
+  }
+}
 </script>
 
 <style>

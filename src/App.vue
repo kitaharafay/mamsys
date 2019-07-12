@@ -5,14 +5,13 @@
 </template>
 
 <script>
-import Layout from './layout/index.vue';
+import Layout from './layout/index.vue'
 export default {
   components: {
-    'gh-layout':Layout
+    'gh-layout': Layout
   }
 }
 </script>
-
 
 <style>
 
