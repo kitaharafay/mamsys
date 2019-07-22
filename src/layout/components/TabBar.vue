@@ -3,6 +3,7 @@
     v-model="editableTabsValue"
     type="card"
     closable
+    class="gh-tab-pane"
   >
     <el-tab-pane
       v-for="item in editableTabs"
@@ -33,3 +34,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.gh-tab-pane {
+  height: 100%;
+}
+</style>

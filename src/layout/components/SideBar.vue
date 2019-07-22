@@ -21,7 +21,8 @@
 
 <style>
 .gh-sidebar {
-    height: calc(100vh - 60px);
+    height: 100vh;
+    z-index: 1000;
 }
 
 .gh-navbar {
