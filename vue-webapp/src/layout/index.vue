@@ -1,8 +1,8 @@
 <template>
-  <el-container class="mamsys-main-wrapper">
+  <a-layout>
     <mamsys-sider-bar />
     <mamsys-app-main />
-  </el-container>
+  </a-layout>
 </template>
 
 <script>

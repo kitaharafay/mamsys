@@ -1,16 +1,17 @@
 <template>
-  <el-container>
+  <a-layout>
     <mamsys-header />
-    <el-main></el-main>
-    <el-footer></el-footer>
-  </el-container>
+    <mamsys-main />
+  </a-layout>
 </template>
 
 <script>
 import MamsysHeader from "./Header.vue";
+import MamsysMain from "./Main.vue";
 export default {
   components: {
-    MamsysHeader
+    MamsysHeader,
+    MamsysMain
   }
 };
 </script>
