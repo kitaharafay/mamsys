@@ -23,20 +23,20 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
-  config.mysql = {
-    client: {
-      host: 'localhost',
-      port: '3306',
-      user: 'root',
-      password: 'password',
-      database: 'sc190730',
-    },
-    app: true,
-    agent: false,
-  };
+  // config.mysql = {
+  //   client: {
+  //     host: 'localhost',
+  //     port: '3306',
+  //     user: 'root',
+  //     password: 'password',
+  //     database: 'sc190730',
+  //   },
+  //   app: true,
+  //   agent: false,
+  // };
 
   exports.cors = {
-    origin: 'http://127.0.0.1:5500',
+    origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
   };
 

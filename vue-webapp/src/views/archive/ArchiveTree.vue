@@ -29,12 +29,11 @@ export default {
           .then(res => {
             console.log(res);
             if (res && res.code === 20000) {
-              let data = JSON.parse(res.data);
+              let data = res.data;
               treeNode.dataRef.children = data.map(element => {
                 return {
-                  title: element.arName,
-                  isLeaf: element.hasChilds ? false : true,
-                  key: element.ID
+                  title: element.title,
+                  key: element.key
                 };
               });
               this.treeData = [...this.treeData];
